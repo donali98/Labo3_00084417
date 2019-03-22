@@ -4,11 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <Button
-        android:id="@+id/submit_action"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".NewActivity">
+    <TextView
+        android:id="@+id/prueba_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"/>
-
+        android:layout_gravity="center"
+        android:text="SUBMIT"/>
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compartir"/>
 </LinearLayout>
