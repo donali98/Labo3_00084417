@@ -1,21 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
+    android:orientation="horizontal"
+    android:gravity="center|top"
+    android:padding="50dp"
     tools:context=".NewActivity">
     <TextView
-        android:id="@+id/prueba_text"
+        android:id="@+id/lblName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="SUBMIT"/>
+        android:text="@string/txt_user"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/txtNameResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblName"
+        android:layout_toEndOf="@id/lblName" />
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblName"
+        android:text="@string/txt_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/txtPasswordResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblPassword"
+        android:layout_below="@id/txtNameResult"
+        android:layout_toEndOf="@id/lblName" />
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPassword"
+        android:text="@string/txt_email"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    <TextView
+        android:id="@+id/txtEmailResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblEmail"
+        android:layout_below="@id/txtPasswordResult"
+        android:layout_toEndOf="@id/txtPasswordResult" />
+
+
+    <TextView
+        android:id="@+id/lblGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblEmail"
+        android:text="@string/txt_gender"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    <TextView
+        android:id="@+id/txtGenderResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblEmail"
+        android:layout_below="@id/txtEmailResult"
+        android:layout_toEndOf="@id/txtEmailResult" />
     <Button
-        android:id="@+id/btnShare"
+        android:id="@+id/btnSendNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Compartir"/>
-</LinearLayout>
+        android:text="@string/txt_send"
+        android:layout_below="@id/txtGenderResult"/>
+</RelativeLayout>

@@ -4,11 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="@dimen/layout_margin"
     tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_user"/>
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_password"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_email"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/txtGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_gender"/>
     <Button
-        android:id="@+id/submit_action"
+        android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"/>
-
+        android:layout_gravity="center"
+        android:text="@string/txt_send"/>
 </LinearLayout>

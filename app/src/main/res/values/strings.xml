@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Labo3_00084417</string>
     <string name="title_activity_new">NewActivity</string>
+    <string name="txt_user">Username</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_gender">Gender</string>
+    <string name="txt_send">Enviar</string>
 </resources>
